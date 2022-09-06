@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Words4chars.AppBarOverlay">
+
+        <EditText
+            android:id="@+id/editChars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="буквы" />
+
+        <Button
+            android:id="@+id/buttonFindWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="findWords"
+            android:text="Найти Слова" />
+
+        <TextView
+            android:id="@+id/textWords"
+            android:layout_width="match_parent"
+            android:layout_height="357dp"
+            android:text="Найденные слова" />
+
+        <EditText
+            android:id="@+id/editFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="фильтр" />
+
+        <Button
+            android:id="@+id/buttonFilterWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="findWordsFiltered"
+            android:text="Применить Фильтр" />
+
+        <TextView
+            android:id="@+id/textFiltered"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:text="Отфильтрованные слова" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
